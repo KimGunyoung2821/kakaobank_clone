@@ -10,3 +10,7 @@ ul, li {
 a {
     text-decoration: none;
 }
+
+#header {
+    background-color: red;
+}
