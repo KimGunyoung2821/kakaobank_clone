@@ -11,6 +11,26 @@ a {
     text-decoration: none;
 }
 
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#header_wrap {
+    margin: 0 auto;
+    width: 1080px;
+    height: 80px;
+}
+
 #header {
-    background-color: red;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo > a > img {
+    width: 116px;
+    height: 20px;
 }
