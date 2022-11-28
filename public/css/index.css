@@ -102,7 +102,7 @@ a {
     width: 100%;
     transform: translateY(1px);
     display: none;
-
+    z-index: 5;
 }
 
 #menu > li:hover > div {
@@ -153,4 +153,75 @@ a {
     position: absolute;
     z-index: 1;
 }
+
+.tex_main {
+    position: absolute;
+    top: 135px;
+    left: 90px;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 1.4;
+    color: black;
+}
+
+.tex_sub {
+    position: absolute;
+    top: 290px;
+    left: 92px;
+    font-size: 16px;
+    line-height: 1.95;
+    color: black;
+    opacity: .7;
+}
+
+.tex_sub2 {
+    position: absolute;
+    top: 365px;
+    left: 92px;
+    font-size: 16px;
+    line-height: 1.95;
+    color: black;
+    opacity: .7;
+}
+
+.link_store {
+    overflow: hidden;
+    position: absolute;
+    top: 480px;
+    margin-left: 85px;
+}
+
+.link_store > li {
+    width: 178px;
+    height: 60px;
+    padding: 0 6px;
+    float: left;
+}
 /* 비주얼 끝  */
+
+/* 컨텐츠 1~5 시작 */
+
+.contents_box1 {
+    min-height: 500px;
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.contents_box1 > div:first-child {
+    width: 55%;
+    background: red;
+}
+
+.contents_box1 > div:last-child {
+    background: blue;
+    flex-grow: 1;
+}
+
+.contents_between {
+    height: 32px;
+    background-color: #fafafa;
+}
+
+
+/* 컨텐츠 1~5 끝 */
