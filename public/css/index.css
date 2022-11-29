@@ -260,5 +260,63 @@ a {
     background-color: #fafafa;
 }
 
+.contents_box2 {
+    min-height: 500px;
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.contents_box2 > div:first-child {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contents_box2 > div:first-child > h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.contents_box2 > div:first-child > p {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+}
+
+.contents_box2 > div:first-child > img {
+    width: 440px;
+    margin: 142px 0 0 -8px;
+    position: relative;
+}
+
+.contents_box2 > div:last-child > img {
+    top: 20px;
+    left: 50%;
+    width: 409px;
+    margin-left: 120px;
+}
+
+.contents_box2 > div:first-child > .cont_btn {
+    top: 2060px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.contents_box2 > div:first-child > .cont_btn > .link_deposit {
+    height: 56px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    font-size: 15px;
+    line-height: 56px; 
+    color: #000;
+    text-align: center;
+}
 
 /* 컨텐츠 1~5 끝 */
