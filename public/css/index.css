@@ -353,8 +353,8 @@ a {
 
 .checkcard2 {
     margin: 0 auto;
-    margin-top: 150px;
-    width: 1080px;
+    margin-top: 80px;
+    width: 1080px
 }
 
 /* 체크카드 끝 */
@@ -366,7 +366,7 @@ a {
     height: 450px;
     position: relative;
     overflow: hidden;
-    left: 360px;
+    left: 400px;
 }
 
 #check_slide > #slide {
@@ -417,3 +417,46 @@ a {
 }
 
 /* 체크 슬라이드 끝 */
+
+/* 체크 슬라이드 버튼 시작 */
+
+.preview {
+    width: 100px;
+    height: 100px;
+    color: #000;
+    margin: 150px 0 0 100px;
+    top: 2900px;
+    position: absolute;
+    font-size: 100px;
+}
+
+.next {
+    width: 100px;
+    height: 100px;
+    color: #000;
+    z-index: 7;
+    position: absolute;
+    font-size: 100px;
+    margin: -284px 0 0 900px;
+}
+
+/* 체크 슬라이드 버튼 끝 */
+
+
+#footer_wrap {
+    position: relative;
+    background-color: #eee;
+    text-align: center;
+    min-width: 1120px;
+    height: 200px;
+    margin-top: 200px;
+}
+
+#footer {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: red;
+    height: 200px;
+}
