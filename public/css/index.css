@@ -320,3 +320,35 @@ a {
 }
 
 /* 컨텐츠 1~5 끝 */
+
+/* 체크카드 시작 */
+
+.checkcard1 {
+    margin: 0 auto;
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.checkcard1 > h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.checkcard1 > p {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+}
+
+.checkcard1 > .check_btn {
+    margin-top: 20px;
+}
+
+/* 체크카드 끝 */
