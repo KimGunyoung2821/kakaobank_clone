@@ -351,4 +351,69 @@ a {
     margin-top: 20px;
 }
 
+.checkcard2 {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 1080px;
+}
+
 /* 체크카드 끝 */
+
+/* 체크 슬라이드 시작 */
+
+#check_slide {
+    width: 290px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    left: 360px;
+}
+
+#check_slide > #slide {
+    position: relative;
+    width: 290px;
+    height: 450px;
+    transition: all 1s;
+    display: flex;
+}
+
+#slide li {
+    position: absolute;
+    width: 290px;
+    height: 450px;
+}
+
+#slide li:nth-child(1) {
+    left: 0px;
+}
+
+#slide li:nth-child(2) {
+    left: 290px;
+}
+
+#slide li:nth-child(3) {
+    left: 580px;
+}
+
+#slide.on1 {
+    left: 0px;
+}
+
+#slide.on2 {
+    left: -290px;
+}
+
+#slide.on3 {
+    left: -580px;
+}
+
+#check_slide > #slide li {
+    float: left;
+    
+}
+
+#slide li:nth-child(2) > img { 
+    width: 280px;
+}
+
+/* 체크 슬라이드 끝 */
