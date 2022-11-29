@@ -210,13 +210,50 @@ a {
 
 .contents_box1 > div:first-child {
     width: 55%;
-    background: red;
+}
+
+.contents_box1 > div:first-child > img {
+    width: 473px;
 }
 
 .contents_box1 > div:last-child {
-    background: blue;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.contents_box1 > div:last-child > h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.contents_box1 > div:last-child > p {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+}
+
+.contents_box1 > div:last-child > .cont_btn1 {
+    top: 438px;
+    left: 50%;
+    margin-top: 30px;
+}
+.contents_box1 > div:last-child > .cont_btn1 > .link_bank {
+    display: block;
+    background-color: #f6f6f6;
+    width: 258px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
 
 .contents_between {
     height: 32px;
