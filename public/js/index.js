@@ -1,33 +1,44 @@
-const slide = document.querySelector(`#slide`)
-const sliding = document.querySelectorAll(`#slide li`)
-const prevBtn = document.querySelector(`.preview`)
-const nextBtn = document.querySelector(`.next`)
+const slide = document.querySelector(`.slide`) //ul
+const img123 = document.querySelectorAll(`.img123`) //li
 
-let index = 0
-let interval = setInterval(slides, 1000)
+const prevbtn = document.querySelector(`.preview`)
+const nextbtn = document.querySelector(`.next`)
 
-function slides(n) {
-    if (index === 3) index = 0
+const img123Count = img123.length
+let currentIndex = 0
 
-    slide.setAttribute(`class`, `on` + (index + 1))
-    index++
+console.log(img123.length)
+for (let i = 0; i < img123.length; i++) {
+    img123[i].style.left = i * 100 + `%`;
 }
-console.log(interval)
 
-function prevBtnhandler() {
-    if(0 <index < 4) {
-    slide.setAttribute(`class`, `on` + (index - 1))
-    clearInterval(interval)
+function gotoslide(idx) {
+    slide.style.left = -100 * idx + `%`;
+    currentIndex = idx
+}
+
+prevbtn.addEventListener(`click`, function () {
+    // currentIndex -= 1
+    // gotoslide(currentIndex)
+
+    if(currentIndex == 0) {
+        gotoslide(img123Count -1)
+    } else{
+        currentIndex -= 1
+        gotoslide(currentIndex)
     }
-}
 
-prevBtn.addEventListener(`click`, prevBtnhandler)
 
-function nextBtnhandler() {
-    if(0 < index < 4) {
-    slide.setAttribute(`class`, `on` + (index + 1))
-    clearInterval(interval)
+})
+
+nextbtn.addEventListener(`click`, function () {
+    // currentIndex += 1
+    // gotoslide(currentIndex)
+
+    if (currentIndex == img123Count - 1) {
+        gotoslide(0)
+    } else {
+        currentIndex += 1
+        gotoslide(currentIndex )
     }
-}
-
-nextBtn.addEventListener(`click`, nextBtnhandler)
+})

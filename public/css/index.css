@@ -76,7 +76,6 @@ a {
 
 #menu > li:nth-child(6) {
     height: 80px;
-    background-color: red;
     box-sizing: border-box;
     padding: 0 20px;
 }
@@ -141,7 +140,7 @@ a {
     max-width: 1200px;
     background-repeat: no-repeat;
     z-index: 2;
-    height: 900px;
+    height: 900px; 
     position: relative;
 
 }
@@ -351,94 +350,79 @@ a {
     margin-top: 20px;
 }
 
-.checkcard2 {
-    margin: 0 auto;
-    margin-top: 80px;
-    width: 1080px
-}
 
 /* 체크카드 끝 */
 
 /* 체크 슬라이드 시작 */
 
+#checkcard2 {
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+}
+
 #check_slide {
-    width: 290px;
     height: 450px;
+    width: 300px;
     position: relative;
+    margin: 0 auto;
     overflow: hidden;
-    left: 400px;
 }
 
-#check_slide > #slide {
-    position: relative;
-    width: 290px;
+.slide {
+    width: 2000px;
     height: 450px;
-    transition: all 1s;
-    display: flex;
-}
-
-#slide li {
     position: absolute;
+    transition: all 1s;
+}
+
+.img123 {
     width: 290px;
-    height: 450px;
-}
-
-#slide li:nth-child(1) {
-    left: 0px;
-}
-
-#slide li:nth-child(2) {
-    left: 290px;
-}
-
-#slide li:nth-child(3) {
-    left: 580px;
-}
-
-#slide.on1 {
-    left: 0px;
-}
-
-#slide.on2 {
-    left: -290px;
-}
-
-#slide.on3 {
-    left: -580px;
-}
-
-#check_slide > #slide li {
+    height: 445px;
     float: left;
+    margin-left: 10px;
     
 }
 
-#slide li:nth-child(2) > img { 
-    width: 280px;
-}
 
 /* 체크 슬라이드 끝 */
 
 /* 체크 슬라이드 버튼 시작 */
 
+#box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 800px;
+    height: 450px;
+    /* background-color: silver; */
+    z-index: 1500;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 0 200px;
+    transform: translateX(-500px);
+}
+
 .preview {
     width: 100px;
     height: 100px;
-    color: #000;
-    margin: 150px 0 0 100px;
-    top: 2900px;
     position: absolute;
-    font-size: 100px;
+    
+    font-size: 50px;
+    bottom: 200px;
+    left: 100px;
+    
 }
 
 .next {
     width: 100px;
-    height: 100px;
-    color: #000;
-    z-index: 7;
     position: absolute;
-    font-size: 100px;
-    margin: -284px 0 0 900px;
+    height: 100px;
+    font-size: 50px;
+    bottom: 200px;
+    right: 100px;
 }
+
 
 /* 체크 슬라이드 버튼 끝 */
 
