@@ -64,7 +64,7 @@ a {
     height: 2px;
     width: 0;
     background: black;
-    transition: width .3s;
+    transition: all .3s;
 }
 #menu > li:hover > a::after {
     width: 100%;
@@ -374,6 +374,7 @@ a {
     height: 450px;
     position: absolute;
     transition: all 1s;
+    left: 0;
 }
 
 .img123 {
@@ -423,6 +424,33 @@ a {
     right: 100px;
 }
 
+#pager_wrap {
+    position: relative;
+    width: 500px;
+    height:75px;
+    margin: 0 auto;
+}
+
+.pager {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.pager span {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 30px;
+    text-indent: -9999em;
+}
+.pager span.active {
+    background: #333;
+}
 
 /* 체크 슬라이드 버튼 끝 */
 
