@@ -8,6 +8,11 @@ const pagerBtn = document.querySelectorAll(`.pager span`)
 const img123Count = img123.length
 let currentIndex = 0
 
+const topbtn = document.querySelector(`.top_btn`)
+
+topbtn.addEventListener(`click`,function(){
+    window.scrollTo({top: 0, behavior:'smooth'});
+})
 
 console.log(img123.length)
 for (let i = 0; i < img123.length; i++) {
@@ -78,7 +83,8 @@ for (let i = 0; i < pagerBtn.length; i++) {
         let pagerNum = e.target.innerText - 1
         gotoslide(pagerNum)
 
-        
+
     })
 
 }
+

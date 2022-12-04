@@ -17,10 +17,28 @@ a {
     height: 100%;
 }
 
+.top_btn {
+    z-index: 500;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #header_wrap {
+    
     width: 100%;
     height: 80px;
     border-bottom: 1px solid #ddd
+    
 }
 
 #header {
@@ -293,11 +311,21 @@ a {
     position: relative;
 }
 
-.contents_box2 > div:last-child > img {
+.contents_box2 > article > img {
     top: 20px;
     left: 50%;
     width: 409px;
     margin-left: 120px;
+}
+
+.invisible {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    transition: all 1s;
 }
 
 .contents_box2 > div:first-child > .cont_btn {
